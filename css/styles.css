@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+
+    --color-primary: #4d41c0;
+    --bg-gray: #e8e8e8;
+    --white: #fff;
+    --text-gray: #4a4a4a;
+    --text-light-gray: #aaa;
+    --yellow: #ffbb3a;
+    --text-reviews: #989898;
+
+}
+  
+
+* {
+
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+
+    margin: 0;
+
+}
+
+html, body {
+
+    background-color: var(--bg-gray);
+
+}
+
+header {
+
+    background-color: var(--color-primary);
+    color: var(--white);
+    height: 60px;
+    display: flex;
+    align-items: center;
+
+}
+
+nav {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+nav h1{
+
+    font-size: 24px;
+    font-weight: 700;
+
+}
+
+nav a{
+
+    font-size: 12px;
+    font-weight: 400;
+
+}
+
+a, a:hover {
+
+    text-decoration: none;
+    color: unset;
+
+}
+
+.io-contact-container {
+
+    display: flex;
+    align-items: center;
+
+}
+
+.io-contact-container img {
+
+    margin-right: 10px;
+
+}
+
+#io-card-list {
+
+    padding: 0 10px;
+
+}
+
+.io-card {
+
+    width: 100%;
+    background-color: var(--white);
+    border-radius: 8px;
+
+}
+
+.io-card img {
+
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+
+}
+
+.io-card-description {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px 20px 20px;
+    border-radius: 0 0 8px 8px;
+    height: 190px;
+    justify-content: space-between;
+
+}
+
+.io-card-description h3 {
+
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: center; 
+
+}
+
+.io-btn, .io-btn:hover {
+
+    height: 40px;
+    width: 180px;
+    background-color: var(--color-primary);
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    border: 0;
+
+}
+
+.io-form-container {
+    padding: 40px 0;
+    max-width: 480px;
+}
+
+.io-form-description {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.io-form {
+    width: 100%;
+}
+
+.io-form-btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+    justify-content: space-between;
+}
+
+.io-form-group {
+    margin-bottom: 20px;
+}
+
+.io-form-group label {
+    color: var(--text-light-gray);
+    font-size: 12px;
+}
+
+.io-form-description h3 {
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.io-card-description-bottom img {
+    width: 22px;
+}
+
+.io-card-description-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.io-card-description-bottom h4 {
+    color: var(--yellow);
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.io-card-description-bottom p {
+    font-size: 12px;
+    color: var(--text-reviews);
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.io-pagination-container {
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.io-pagination-box {
+    display: flex;
+    width: 180px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.io-pagination-box p {
+    margin: 0;
+    font-size: 12px;
+    color: var(--color-primary);
+    font-weight: 400;
+}
+
+.io-pagination-box button {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid var(--color-primary);
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.io-pagination-box button:disabled {
+    border: 1px solid var(--text-light-gray);
+}
+
+.io-flip-horizontal {
+    transform: rotate(180deg);
+}
+
+.io-pagination-box button img {
+    filter: brightness(0) saturate(100%) invert(23%) sepia(39%) saturate(4488%) hue-rotate(237deg) brightness(88%) contrast(89%);
+}
+
+.io-pagination-box button:disabled img {
+    filter: unset;
+}
+
+.io-btn-start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
